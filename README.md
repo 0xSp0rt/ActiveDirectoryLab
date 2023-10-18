@@ -10,7 +10,7 @@ In this lab, we are going to walk through how to create an Active directory home
 
 - <b>PowerShell</b> 
 - <b>Azure VM</b>
-- <b>Azure Vnet</b>
+- <b>Azure Virtual network</b>
 
 <h2>Environments Used </h2>
 
@@ -20,12 +20,21 @@ In this lab, we are going to walk through how to create an Active directory home
 <h2>Program walk-through:</h2>
 
 <p align="left">
-Create a resource virtual network on Azure: To do this, it's important to create a resource group for all the resource to be grouped in. <br/>
-<img src="https://imgur.com/XAFCAx9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create a resource group on Azure: To do this, it's important to create and name the resource group for all the resource to be grouped in, for this demonstration we're using Rgroup-demo. <br/>
+<img src="https://imgur.com/XAFCAx9.jpg" height="80%" width="80%" alt="Active Directory VM homelab"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ Virtual network steps 1: Setting up a virtual network is important for setting up the Active directory domain server for later, setting up this virtual network allows us to configure our ip address and subnet reservation which could be useful for endpoints or vms trying to connect to the AD-DS server. <br/>
+<img src="https://imgur.com/kMxuPzO.png" height="80%" width="80%" alt="Active Directory VM homelab"/>
+ 
+ Virtual network steps 2: Created the virtual network under the Rgroup-demo resource group and named the virtual network "AD-Vnet" <br/>
+<img src="https://imgur.com/yHjlTcY.png" height="80%" width="80%" alt="Active Directory VM homelab"/>
+ 
+ Virtual network steps 3: Configured the virtual network ip address to 172.16.0.0/16 and added a subnet configured with an ip address range of 172.16.0.0/24 <br/>
+<img src="https://imgur.com/U45TxhE.png" height="80%" width="80%" alt="Active Directory VM homelab"/>
+ 
+ Virtual network steps 4: Finalized and created the virtual network <br/>
+<img src="https://imgur.com/DLcZoM0.png" height="80%" width="80%" alt="Active Directory VM homelab"/>
 <br />
 <br />
 Enter the number of passes: <br/>
