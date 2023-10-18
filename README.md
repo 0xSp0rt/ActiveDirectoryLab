@@ -19,9 +19,9 @@ In this lab, we are going to walk through how to create an Active directory home
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="left">
+Create a resource virtual network on Azure: To do this, it's important to create a resource group for all the resource to be grouped in. <br/>
+<img src="https://imgur.com/XAFCAx9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
