@@ -14,6 +14,7 @@ In this lab, we are going to walk through how to create an Active directory home
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
+- <b>Windows server 2019</b>
 
 <h2>Program walk-through:</h2>
 
