@@ -10,6 +10,7 @@ In this lab, we are going to walk through how to create an Active directory home
 
 - <b>PowerShell</b> 
 - <b>Azure VM</b>
+- <b>Azure Vnet</b>
 
 <h2>Environments Used </h2>
 
