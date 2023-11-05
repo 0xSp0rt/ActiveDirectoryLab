@@ -27,29 +27,29 @@ Create a resource group on Azure: To do this, it's important to create and name 
 <img src="https://imgur.com/kMxuPzO.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
  
  Virtual network steps 2: Created the virtual network under the Rgroup-demo resource group and named the virtual network "AD-Vnet" <br/>
-<img src="https://imgur.com/yHjlTcY.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/BqXGNfl.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
  
  Virtual network steps 3: Configured the virtual network ip address to 172.16.0.0/16 and added a subnet configured with an ip address range of 172.16.0.0/24 <br/>
-<img src="https://imgur.com/U45TxhE.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/8Sovenm.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
  
  Virtual network steps 4: Finalized and created the virtual network <br/>
 <img src="https://imgur.com/DLcZoM0.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 <br />
 <br />
 Create Windows server 2019 data center Step 1: This windows server will act as our active directory domain controller <br/>
-<img src="https://imgur.com/3ke4VTw.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/IPP2fgo.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 Create Windows server 2019 data center Step 2: <br/>
 <img src="https://imgur.com/8EnnxBc.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 Create Windows server 2019 data center Step 3: This server will share the same subnet preconfigured in the Virtual network setup. <br/>
-<img src="https://imgur.com/cgOViO6.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/TosE67h.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 Create Windows server 2019 data center Step 4: It is important to note that the first 3 IPs in azure is always reserved. <br/>
-<img src="https://imgur.com/KEQbEeA.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/tNLfe21.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 Windows server 2019 data center: Server overview <br/>
-<img src="https://imgur.com/NbIS6nF.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/T5X2j86.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 After setting up the virtual network and the windows server, we would proceed to login to the windows server via the public ip address (172.178.112.148) using a windows remote desktop protocol to further configure the Active Directory Domain server and then setting up a windows 10 virtual machine to add to the active directory.
 To configure Active directory, we need Ip address and DNS server of the windows server to be static and the same. If we login to the server, this would not be the same as shown below <br/>
@@ -64,20 +64,20 @@ To fix this, we have to return to the Windows server (domain controller)  networ
 
 <img src="https://imgur.com/dEq63UL.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
-<img src="https://imgur.com/3szLC0N.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/DmBnRPF.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 <br />
 <br />
 After configuring the ip address allocation, proceed to the Virtual Network and select "AD-Vnet" DNS servers then change the server settings to custom and input the Windows server private ip address "172.16.0.5" as the DNS server and "162.63.129.16" as the alternate, click save and go back to the windows server and run the command "IPCONFIG /RENEW" and "IPCONFIG /ALL" to confirm the changes. Observe that the IP address of the Windows server and the DNS servers are now the same.
 <br/>
 
-<img src="https://imgur.com/2hCqVH3.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/1kDEmA8.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
-<img src="https://imgur.com/X1i9Wbn.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/zny1zaU.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
-<img src="https://imgur.com/tf5whRg.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/1Kl0oAk.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
-<img src="https://imgur.com/Wrpvzdq.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/ntDEr6T.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 <br />
 <br />
@@ -130,7 +130,7 @@ Note that you might have to restart the remote desktop protocol to gain access t
 <br />
 <br />
 After logging in, run the command "whoami" to confirm AD-DS is active, you should get your netbiosname\administrator which is "Sport\azureuser" in this demonstration:  <br/>
-<img src="https://imgur.com/acqKlTh.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/4RarkOV.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 <br />
 <br />
