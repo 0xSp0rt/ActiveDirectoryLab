@@ -24,7 +24,7 @@ Create a resource group on Azure: To do this, it's important to create and name 
 <br />
 <br />
  Virtual network steps 1: Setting up a virtual network is important for setting up the Active directory domain server for later, setting up this virtual network allows us to configure our ip address and subnet reservation which could be useful for endpoints or vms trying to connect to the AD-DS server. <br/>
-<img src="https://imgur.com/kMxuPzO.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/7Auvz4Q.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
  
  Virtual network steps 2: Created the virtual network under the Rgroup-demo resource group and named the virtual network "AD-Vnet" <br/>
 <img src="https://imgur.com/BqXGNfl.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
@@ -62,7 +62,7 @@ To fix this, we have to return to the Windows server (domain controller)  networ
 
 <img src="https://imgur.com/MVGXbW8.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
-<img src="https://imgur.com/dEq63UL.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
+<img src="https://imgur.com/JaNH1nN.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
 <img src="https://imgur.com/DmBnRPF.png" height="80%" width="80%" alt="Active Directory Azure homelab"/>
 
